@@ -1,0 +1,9 @@
+---
+- hosts: jenkins
+  tasks:
+    - name: 'Instalando Jenkins'
+      apt:
+         name:
+            - jenkins
+         state: latest
+      become: yes
